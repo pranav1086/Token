@@ -1,0 +1,369 @@
+{
+	"info": {
+		"_postman_id": "ca5c15a2-b079-4b6d-ae9e-6c09c699905d",
+		"name": "Universal Print Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fetch Token from token A",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);\r",
+							"pm.environment.set(\"access_token\",data.access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "urn:ietf:params:oauth:grant-type:jwt-bearer",
+							"type": "default"
+						},
+						{
+							"key": "assertion",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJhcGk6Ly8wZjljMjg4Ni0zMmFhLTRmMzctOGFhMi1lZDg5ZjI5MDk3MzIiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzM0MTcyYS1lODJhLTRhYzctYTNkMy0wMjk0OTk3MGQ1ZTYvIiwiaWF0IjoxNjg4NTc5OTQ2LCJuYmYiOjE2ODg1Nzk5NDYsImV4cCI6MTY4ODU4NTM3MCwiYWNyIjoiMSIsImFpbyI6IkFZUUFlLzhUQUFBQUo5RXlEK2I4ZGpILzUyOWwrMWlESHF5cWxBWDRzU01EL2p3YnpRMEZZUzBCZXZzV3hqNEtteTRTU0JDVHc0UE1sdGEwb1R2UWJhWHVJUFplRmhud291Q2V0MENPK2oxYlErbkJmQUcvZXhwQ25UTlNsbWdhak5DK3IwdGpvajBVYzNYWFp4cERJT2lTN0wxVGp1bEdUNXRQUkF0NCtiaHlSNHk4VVZYbGhsMD0iLCJhbXIiOlsicHdkIiwibWZhIl0sImFwcGlkIjoiMGY5YzI4ODYtMzJhYS00ZjM3LThhYTItZWQ4OWYyOTA5NzMyIiwiYXBwaWRhY3IiOiIwIiwiZ2l2ZW5fbmFtZSI6IlRMRiBUZXN0IFVzZXIgMSIsImlwYWRkciI6IjE0Ny4xNjEuMTY3LjIzIiwibmFtZSI6IlRMRiBUZXN0IFVzZXIgMSIsIm9pZCI6ImFlNjMwNTY0LTRiZjctNDEyYy05NTgwLWQ0NzdlMmM5NjY3ZSIsIm9ucHJlbV9zaWQiOiJTLTEtNS0yMS0xOTc3NjQ3Mzk3LTIzNDM0NzUxNTMtMjQzMTQ4MTQyMC03NzczNCIsInJoIjoiMC5BVjRBS2hjME55cm94MHFqMHdLVW1YRFY1b1lvbkEtcU1qZFBpcUx0aWZLUWx6SmVBQzAuIiwic2NwIjoiU1NPIiwic3ViIjoiMGVPUzYyMFJsUmtyUVV3czlXOEVqS2huRU9uSDEwN3FJUEZpLWthTXhqayIsInRpZCI6IjM3MzQxNzJhLWU4MmEtNGFjNy1hM2QzLTAyOTQ5OTcwZDVlNiIsInVuaXF1ZV9uYW1lIjoidGZsdGVzdHVzZXIxQGl0c3ZjLmNvLnVrIiwidXBuIjoidGZsdGVzdHVzZXIxQGl0c3ZjLmNvLnVrIiwidXRpIjoianZLZ3NaOUpVRS1hQUpQZ2tROUNBQSIsInZlciI6IjEuMCJ9.fDSb29rmfwNzIVoLyXUac49W40hPmvGyzwmOqHE7357Q1g6CfQG18Qwaky7lLldcu-pdw5dePI4Mkh4yexhrhkWVKFrD2z_HRZBdOmJARJmur7FMqg8oL_m8w9ZY7ccLGUy2HZbQf4dvgf-42ICRX57SICoOecMoewCjS04KmBcPDrlo6ETDyEeaGyjVLO-ywyhjbwpf4QCOKX5fN9cwVO3MxkaU5j5FP8Hf15-m2dmxhBiNUzwumm6CXaitnymjOSVzl7T15c3ZT3UpBxvv3h8tFiaVcQDIbZ4NHkPfTOcx6-33R3Z4LHhAc0eFVjV78Q7iyNnRwI1GCPmJg_O0Jw",
+							"type": "default"
+						},
+						{
+							"key": "client_id",
+							"value": "0f9c2886-32aa-4f37-8aa2-ed89f2909732",
+							"type": "default"
+						},
+						{
+							"key": "client_secret",
+							"value": "-CQ8Q~jeIoSFpieNtGKZdNuE6O5cKWlCTuayubVh",
+							"type": "default"
+						},
+						{
+							"key": "scope",
+							"value": "openid",
+							"type": "default"
+						},
+						{
+							"key": "requested_token_use",
+							"value": "on_behalf_of",
+							"type": "default"
+						},
+						{
+							"key": "client_assertion_type",
+							"value": "urn:ietf:params:oauth:client-assertion-type:jwt-bearer",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://login.microsoftonline.com/3734172a-e82a-4ac7-a3d3-02949970d5e6/oauth2/v2.0/token",
+					"protocol": "https",
+					"host": [
+						"login",
+						"microsoftonline",
+						"com"
+					],
+					"path": [
+						"3734172a-e82a-4ac7-a3d3-02949970d5e6",
+						"oauth2",
+						"v2.0",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New PrintJob",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);\r",
+							"pm.environment.set(\"job_id\",data.id);\r",
+							"pm.environment.set(\"document_id\",data.documents[0].id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"configuration\": {\r\n        \"@odata.type\": \"microsoft.graph.printJobConfiguration\",\r\n        \"feedOrientation\": \"longEdgeFirst\",\r\n        \"pageRanges\": [\r\n            {\r\n                \"@odata.type\": \"microsoft.graph.integerRange\",\r\n                \"start\": 1,\r\n                \"end\": 1\r\n            }\r\n        ],\r\n        \"quality\": \"medium\",\r\n        \"dpi\": 600,\r\n        \"orientation\": \"landscape\",\r\n        \"copies\": 1,\r\n        \"duplexMode\": \"oneSided\",\r\n        \"mediaSize\": \"A4\",\r\n        \"margin\": {\r\n            \"top\": 0,\r\n            \"bottom\": 0,\r\n            \"left\": 0,\r\n            \"right\": 0\r\n        },\r\n        \"mediaType\": \"stationery\",\r\n        \"finishings\": [\r\n                \"none\"\r\n        ],\r\n        \"pagesPerSheet\": 1,\r\n        \"multipageLayout\": \"clockwiseFromBottomLeft\",\r\n        \"collate\": false,\r\n        \"scaling\": \"shrinkToFit\",\r\n        \"fitPdfToPage\": false\r\n        \r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://graph.microsoft.com/v1.0/print/printers/2f05d56a-ba86-4552-8590-c005cb65ed5d/jobs",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"v1.0",
+						"print",
+						"printers",
+						"2f05d56a-ba86-4552-8590-c005cb65ed5d",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Upload Session",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);\r",
+							"pm.environment.set(\"upload_url\",data.uploadUrl);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"properties\": {\r\n    \"documentName\": \"TestPrintUP.pdf\",\r\n    \"contentType\": \"application/pdf\", \r\n    \"size\": 36864\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://graph.microsoft.com/v1.0/print/printers/2f05d56a-ba86-4552-8590-c005cb65ed5d/jobs/{{job_id}}/documents/{{document_id}}/createUploadSession",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"v1.0",
+						"print",
+						"printers",
+						"2f05d56a-ba86-4552-8590-c005cb65ed5d",
+						"jobs",
+						"{{job_id}}",
+						"documents",
+						"{{document_id}}",
+						"createUploadSession"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Document Session",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-length": true,
+					"content-type": true,
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Length",
+						"value": "36864",
+						"type": "default"
+					},
+					{
+						"key": "Content-Range",
+						"value": "bytes=0-36863/36864",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/C:/Users/242170/Downloads/TestPrintUP.pdf"
+					},
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{upload_url}}",
+					"host": [
+						"{{upload_url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Document Session",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-length": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Length",
+						"value": "36864",
+						"type": "default"
+					},
+					{
+						"key": "Content-Range",
+						"value": "bytes=0-36863/36864",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/C:/Users/242170/Downloads/TestPrintUP.pdf"
+					},
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{upload_url}}",
+					"host": [
+						"{{upload_url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Printer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://graph.microsoft.com/v1.0/print/printers",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"v1.0",
+						"print",
+						"printers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Print Share",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJub25jZSI6IkpLU3pYWGV2cFcyckZMWDcyV3BHdExUWDc0RUVXalJXUVlGcml3bURYZHMiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwMDAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8zNzM0MTcyYS1lODJhLTRhYzctYTNkMy0wMjk0OTk3MGQ1ZTYvIiwiaWF0IjoxNjg4NDcwMzQ1LCJuYmYiOjE2ODg0NzAzNDUsImV4cCI6MTY4ODQ3NTIzNCwiYWNjdCI6MCwiYWNyIjoiMSIsImFpbyI6IkFYUUFpLzhUQUFBQTFmTDRkdnc1MUVWRU5kOHMzd3YzQmJHTzUrRG9VL2RUOXo3TmhYWjNnQkVqMUF6elRsNDltWTczb3haTG13NFdYUVR6N1d1bEJ0OHk1aDhuQ1J5eDY2SmZoUzZvSGpjWEZacmFJbVFSTC9DeldGd1pWWDFYZ0RjZWg2Z2FQblVBdVpsd00vanZFM0hPSHBWVFZkNysyQT09IiwiYW1yIjpbInB3ZCIsIm1mYSJdLCJhcHBfZGlzcGxheW5hbWUiOiJUUEggQmFjayBPZmZpY2UgU3lzdGVtIC0gVGVzdCIsImFwcGlkIjoiMGY5YzI4ODYtMzJhYS00ZjM3LThhYTItZWQ4OWYyOTA5NzMyIiwiYXBwaWRhY3IiOiIxIiwiZ2l2ZW5fbmFtZSI6IlRMRiBUZXN0IFVzZXIgMSIsImlkdHlwIjoidXNlciIsImlwYWRkciI6IjE0Ny4xNjEuMTY3LjIyIiwibmFtZSI6IlRMRiBUZXN0IFVzZXIgMSIsIm9pZCI6ImFlNjMwNTY0LTRiZjctNDEyYy05NTgwLWQ0NzdlMmM5NjY3ZSIsIm9ucHJlbV9zaWQiOiJTLTEtNS0yMS0xOTc3NjQ3Mzk3LTIzNDM0NzUxNTMtMjQzMTQ4MTQyMC03NzczNCIsInBsYXRmIjoiMyIsInB1aWQiOiIxMDAzMjAwMjEzNDc1MDk0IiwicmgiOiIwLkFWNEFLaGMwTnlyb3gwcWowd0tVbVhEVjVnTUFBQUFBQUFBQXdBQUFBQUFBQUFCZUFDMC4iLCJzY3AiOiJQcmludGVyLlJlYWQuQWxsIFByaW50Sm9iLkNyZWF0ZSBQcmludEpvYi5SZWFkIFByaW50Sm9iLlJlYWQuQWxsIFByaW50Sm9iLlJlYWRCYXNpYyBQcmludEpvYi5SZWFkQmFzaWMuQWxsIFByaW50Sm9iLlJlYWRXcml0ZSBQcmludEpvYi5SZWFkV3JpdGUuQWxsIFByaW50Sm9iLlJlYWRXcml0ZUJhc2ljIFByaW50Sm9iLlJlYWRXcml0ZUJhc2ljLkFsbCBQcmludFNldHRpbmdzLlJlYWQuQWxsIFByaW50U2V0dGluZ3MuUmVhZFdyaXRlLkFsbCBVc2VyLlJlYWQgcHJvZmlsZSBvcGVuaWQgZW1haWwiLCJzdWIiOiJodnR1NUpHajNPN0J2a0dDa3kwWUVBVXlVbkR5TEY4c1J0TkwwaWdlQTNvIiwidGVuYW50X3JlZ2lvbl9zY29wZSI6IkVVIiwidGlkIjoiMzczNDE3MmEtZTgyYS00YWM3LWEzZDMtMDI5NDk5NzBkNWU2IiwidW5pcXVlX25hbWUiOiJ0Zmx0ZXN0dXNlcjFAaXRzdmMuY28udWsiLCJ1cG4iOiJ0Zmx0ZXN0dXNlcjFAaXRzdmMuY28udWsiLCJ1dGkiOiI4cU13Mnd0ZEtFMmhzbFYtcEhJaEFBIiwidmVyIjoiMS4wIiwid2lkcyI6WyI2NDRlZjQ3OC1lMjhmLTRlMjgtYjlkYy0zZmRkZTlhYTBiMWYiLCJiNzlmYmY0ZC0zZWY5LTQ2ODktODE0My03NmIxOTRlODU1MDkiXSwieG1zX3N0Ijp7InN1YiI6IjBlT1M2MjBSbFJrclFVd3M5VzhFaktobkVPbkgxMDdxSVBGaS1rYU14amsifSwieG1zX3RjZHQiOjE0NTk4NTU5OTV9.k1cL-H3hms4eInBebzcha-QgHYthyokusvsQETxBwAMcyyL7q2Ggt13Y1UR6GvjuR1nEOaPckwwhLjC5jDUPjmMj9Ybvj0ix5IW8AhOyxDbaXNXZNhMs5HXfAxWFYNHAsz74J61bIArXZcKjV7DfYEZiHrr_9_LP5pGYAtXwQ9Uyugmk_gCSJ2nly5S2W_vhdtY5hKCC39AZHg_42TCvQaiDBGUyVmUJikVgirLXLB5BKEwQgP1OiMK_c3xPTcAOvg-9e-9mlHHOW-eVBQJT17dBlalmu_4w43h1dGvaj2TUYyKfbLFNV-t1hIPrWxEm9547DQ66FBTEY-z-QPNHCQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://graph.microsoft.com/v1.0/print/printers/2f05d56a-ba86-4552-8590-c005cb65ed5d/shares",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"v1.0",
+						"print",
+						"printers",
+						"2f05d56a-ba86-4552-8590-c005cb65ed5d",
+						"shares"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "access_token",
+			"value": "X"
+		}
+	]
+}
